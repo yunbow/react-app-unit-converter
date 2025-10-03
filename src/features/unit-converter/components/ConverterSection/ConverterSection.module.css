@@ -1,0 +1,38 @@
+.converterSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.inputGroup {
+  flex: 1;
+  min-width: 200px;
+  margin: 0.5rem;
+}
+
+.arrow {
+  font-size: 1.5rem;
+  color: var(--color-muted-foreground);
+  margin: 0 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .converterSection {
+    flex-direction: column;
+  }
+
+  .arrow {
+    transform: rotate(90deg);
+    margin: 1rem 0;
+  }
+
+  .inputGroup {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+}

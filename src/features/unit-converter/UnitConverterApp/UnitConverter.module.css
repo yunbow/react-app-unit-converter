@@ -1,0 +1,34 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--color-card);
+  box-shadow: var(--shadow-md);
+  border-radius: var(--radius);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.tabContent {
+  display: none;
+  padding: 1.5rem;
+  background-color: var(--color-card);
+  border-radius: var(--radius);
+  animation: fadeIn 0.5s;
+}
+
+.tabContent.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+    margin: 1rem;
+  }
+}

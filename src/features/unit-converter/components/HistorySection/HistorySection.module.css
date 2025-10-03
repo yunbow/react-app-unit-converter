@@ -1,0 +1,24 @@
+.historySection {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.historyList {
+  list-style: none;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.historyItem {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.historyItem:last-child {
+  border-bottom: none;
+}
